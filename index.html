@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aplicaciones web</title>
+<style>
+  :root {
+    --bg: #eef7f1;
+    --surface: #ffffff;
+    --text: #17261d;
+    --muted: #547060;
+    --accent: #237a49;
+    --border: #cfe3d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121a15;
+      --surface: #1a251e;
+      --text: #e6f0ea;
+      --muted: #96ab9d;
+      --accent: #5fd08a;
+      --border: #2b3d31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
+  h1 { font-size: 2.2rem; margin: 0 0 32px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  a.tarea {
+    display: block;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--accent);
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+  }
+  a.tarea:hover, a.tarea:focus-visible { border-color: var(--accent); outline: none; }
+  a.tarea strong { display: block; font-size: 1.15rem; color: var(--accent); }
+  a.tarea span { color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aplicaciones web</h1>
+
+  <ul>
+    <!-- Para añadir otra tarea, copia un bloque <li>...</li> y cambia el enlace y los textos -->
+    <li>
+      <a class="tarea" href="practica1/index.html">
+        <strong>Práctica 1: Texto y etiquetas CSS</strong>
+      </a>
+    </li>
+    <li>
+      <a class="tarea" href="practica2/index.html">
+        <strong>Práctica 2: Lista, div y class e id</strong>
+      </a>
+    </li>
+    <li>
+      <a class="tarea" href="Practica3/principal.html">
+        <strong>Práctica 3: Enlaces, menu y clases CSS</strong>
+      </a>
+    </li>
+  </ul>
+</main>
+</body>
+</html>
